@@ -7,12 +7,14 @@ ContactManager.Views.ContactForm = Backbone.View.extend({
     e.preventDefault();
     this.trigger('form:submitted', {
       name: this.$('.contact-name-input').val(),
-      tel: this.$('.contact-tel-inpput').val(),
-      email:this.$('contact-email-input').val()
+      tel: this.$('.contact-tel-input').val(),
+      email:this.$('.contact-email-input').val()
     });
   },
   render: function() {
-    var html = this.template();
+    var html = this.template(_.extend(this.model.toJSON(), {
+      isNew: this.model.isNew()
+    }));
     this.$el.append(html);
     return this;
   }
