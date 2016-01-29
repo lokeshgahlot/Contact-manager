@@ -38,8 +38,12 @@
         <h3>
           <%- name %>
           <small>
-            <a href="#contact/delete/<%- id %>" class="delete-contact" />
-            <span class="glyphicon glyphicon-trash"></span>
+            <a href="#contacts/edit/<%-id%>" class="edit-contact">
+              <span class="glyphicon glyphicon-pencil"></span>
+            </a>
+            <a href="#contact/delete/<%- id %>" class="delete-contact">
+              <span class="glyphicon glyphicon-trash"></span>
+            </a>
           </small>
         </h3>
       </div>
@@ -55,27 +59,27 @@
 
 
     <script type="text/template" id="tpl-new-contact">
-      <h2 class="page-header text-center">Create Contact</h2>
+      <h2 class="page-header text-center"><%- isNew ? 'Create' : 'Edit' %> Contact</h2>
        <form class="form-horizontal contract-form" role="form">
 
         <div class="form-group">
           <label class="col-sm-4 control-label">Full Name:</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control contact-name-input" />
+            <input type="text" class="form-control contact-name-input" value="<%- name %>"/>
           </div>
         </div>
 
         <div class="form-group">
           <label class="col-sm-4 control-label">Email:</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control contact-name-input" />
+            <input type="text" class="form-control contact-email-input" value="<%- email %>" />
           </div>
         </div>
 
         <div class="form-group">
           <label class="col-sm-4 control-label">Telephone number:</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control contact-tel-input" />
+            <input type="text" class="form-control contact-tel-input" value="<%- tel %>" />
           </div>
         </div>
 
