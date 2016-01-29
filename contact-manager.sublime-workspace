@@ -514,21 +514,20 @@
 	[
 		"/Users/u424178/lokesh/projects/contact-manager",
 		"/Users/u424178/lokesh/projects/contact-manager/app",
-		"/Users/u424178/lokesh/projects/contact-manager/app/js",
-		"/Users/u424178/lokesh/projects/contact-manager/vendor/bootstrap/dist/css",
-		"/Users/u424178/lokesh/projects/contact-manager/vendor/bootstrap/dist/fonts"
+		"/Users/u424178/lokesh/projects/contact-manager/app/js"
 	],
 	"file_history":
 	[
-		"/Users/u424178/lokesh/projects/contact-manager/.gitignore",
-		"/Users/u424178/lokesh/projects/contact-manager/app/js/models/contact.js",
-		"/Users/u424178/lokesh/projects/contact-manager/bower.json",
-		"/Users/u424178/lokesh/projects/contact-manager/index.html",
 		"/Users/u424178/lokesh/projects/contact-manager/app/js/collections/contacts.js",
 		"/Users/u424178/lokesh/projects/contact-manager/app/js/views/contact.js",
+		"/Users/u424178/lokesh/projects/contact-manager/index.html",
+		"/Users/u424178/lokesh/projects/contact-manager/app/js/router.js",
 		"/Users/u424178/lokesh/projects/contact-manager/app/js/views/contacts.js",
 		"/Users/u424178/lokesh/projects/contact-manager/app/js/app.js",
 		"/Users/u424178/lokesh/projects/contact-manager/.git/COMMIT_EDITMSG",
+		"/Users/u424178/lokesh/projects/contact-manager/app/js/models/contact.js",
+		"/Users/u424178/lokesh/projects/contact-manager/.gitignore",
+		"/Users/u424178/lokesh/projects/contact-manager/bower.json",
 		"/Users/u424178/lokesh/projects/contact-manager/.bowerrc",
 		"/Users/u424178/.bash_profile",
 		"/Users/u424178/lokesh/projects/todolist-react/.git/COMMIT_EDITMSG",
@@ -646,8 +645,7 @@
 		"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/target/dist/7M/accounts/js/mwf-accounts-ui-summary.js",
 		"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src/main/webapp/static/webassets/accounts/7M/ui/mwf-accounts-ui-detail-dialog/mwf-accounts-ui-detail-dialog-mm.less",
 		"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src/main/webapp/static/webassets/accounts/7M/ui/mwf-accounts-ui-dialog/mwf-accounts-ui-dialog-mm.less",
-		"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src/main/webapp/static/webassets/accounts/7M/plugin/mwf-plugin-accounts-expandable-content/mwf-plugin-accounts-expandable-content-mm.less",
-		"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src/main/webapp/static/webassets/accounts/7M/plugin/mwf-plugin-accounts-expand-collapse/mwf-plugin-accounts-expand-collapse-mm.less"
+		"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src/main/webapp/static/webassets/accounts/7M/plugin/mwf-plugin-accounts-expandable-content/mwf-plugin-accounts-expandable-content-mm.less"
 	],
 	"find":
 	{
@@ -658,6 +656,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/u424178/lokesh/projects/contact-manager/app/js",
 			"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src, *.less",
 			"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src, *.jade",
 			"/Users/u424178/lokesh/projects/wellsfargo/phone-415/moneybank/phone/src, *.js",
@@ -747,6 +746,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Contact",
+			"ContactManager.Views.contact",
+			"contacts-container",
 			"dl",
 			"scr",
 			"underscore",
@@ -871,10 +873,7 @@
 			"resetContent",
 			"mwfSearchReset",
 			"resetSimpleSearch",
-			"iframe",
-			"processEvent",
-			"wells",
-			"http"
+			"iframe"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -893,6 +892,11 @@
 	},
 	"groups":
 	[
+		{
+			"sheets":
+			[
+			]
+		},
 		{
 			"sheets":
 			[
@@ -916,11 +920,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.589452833706,
 			1.0
 		],
 		"rows":
@@ -1474,7 +1485,7 @@
 		[
 			[
 				"",
-				"~/lokesh/projects/basic-gulp-setup/gulp-setup.sublime-workspace"
+				"~/lokesh/projects/wellsfargo/phone-only/phone-only.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1488,7 +1499,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1496,7 +1507,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 278.0,
+	"side_bar_width": 248.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
