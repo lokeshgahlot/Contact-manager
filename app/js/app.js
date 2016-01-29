@@ -21,7 +21,15 @@ window.ContactManager = {
     });
 
     router.on('route:newContacts', function() {
-      console.log('new Contact');
+      var newContactForm = new ContactManager.Views.ContactForm();
+
+      newContactForm.on('form:submitted', function(attrs) {
+        attrs.id = contacts.isEmpty() ? 1 : (_.max(contacts.pluck('id')) + 1);
+        contacts.add(attrs);
+        router.navigate('contacts', true);
+      });
+
+      $('.main-container').html(newContactForm.render().$el);
     });
 
     router.on('route:editContacts', function(id) {
