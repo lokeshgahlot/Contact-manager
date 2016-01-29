@@ -10,10 +10,8 @@ ContactManager.Views.Contact = Backbone.View.extend({
   },
   onClickDelete: function(e) {
     e.preventDefault();
-    console.log('Delete');
     this.model.collection.remove(this.model);
   },
-
   render: function() {
     var html = this.template(this.model.toJSON());
     this.$el.append(html);
