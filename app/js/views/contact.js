@@ -1,7 +1,7 @@
-ContactManager.Views.Contact = Backbone.View.extend({
+ContactManager.Views.Contact = Marionette.ItemView.extend({
   tagName: 'li',
   className: 'media col-md-6 col-lg-4',
-  template: _.template($('#tpl-contact').html()),
+  template: '#tpl-contact',
   events: {
     'click .delete-contact': 'onClickDelete'
   },
@@ -12,9 +12,7 @@ ContactManager.Views.Contact = Backbone.View.extend({
     e.preventDefault();
     this.model.collection.remove(this.model);
   },
-  render: function() {
-    var html = this.template(this.model.toJSON());
-    this.$el.append(html);
-    return this;
+  modelEvents: {
+    'remove': 'close'
   }
 });
