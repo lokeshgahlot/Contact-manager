@@ -5,6 +5,7 @@ window.ContactManager = {
   start: function(data) {
     var contacts = new ContactManager.Collections.Contacts(data.contacts);
     var router = new ContactManager.Router();
+    var mainRegion = new Marionette.Region({el: '.main-container'});
 
     router.on('route:home', function() {
       router.navigate('contacts', {
@@ -17,7 +18,7 @@ window.ContactManager = {
       var contactsView = new ContactManager.Views.Contacts({
         collection: contacts
       });
-      $('.main-container').html(contactsView.render().$el);
+      mainRegion.show(contactsView);
     });
 
     router.on('route:newContacts', function() {
@@ -31,7 +32,7 @@ window.ContactManager = {
         router.navigate('contacts', true);
       });
 
-      $('.main-container').html(newContactForm.render().$el);
+      mainRegion.show(newContactForm);
     });
 
     router.on('route:editContacts', function(id) {
@@ -46,7 +47,7 @@ window.ContactManager = {
           router.navigate('contacts', true);
         });
 
-        $('.main-container').html(editContact.render().$el);
+        mainRegion.show(editContact);
       } else {
         router.navigate('contacts', true) ;
       }
