@@ -11,8 +11,5 @@ ContactManager.Views.Contact = Marionette.ItemView.extend({
   onClickDelete: function(e) {
     e.preventDefault();
     this.model.collection.remove(this.model);
-  },
-  modelEvents: {
-    'remove': 'close'
   }
 });
