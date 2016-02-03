@@ -1,8 +1,12 @@
-ContactManager.Router = Backbone.Router.extend({
+ContactManager.Router = Marionette.AppRouter.extend({
   routes: {
-    '': 'home',
-    'contacts': 'showContacts',
-    'contacts/new': 'newContacts',
-    'contacts/edit/:id':'editContacts'
+    '': 'home'
+  },
+
+  home: function() {
+    this.navigate('contacts', {
+      trigger: true,
+      replace: true
+    });
   }
 });
