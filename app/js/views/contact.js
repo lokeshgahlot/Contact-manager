@@ -6,6 +6,7 @@ ContactManager.Views.Contact = Marionette.ItemView.extend({
     'click .delete-contact': 'onClickDelete'
   },
   initialize: function() {
+    console.log('********* initializer...');
     this.listenTo(this.model, 'remove', this.remove);
   },
   onClickDelete: function(e) {
